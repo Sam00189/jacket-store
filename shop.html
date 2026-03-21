@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop</title>
+<link rel="stylesheet" href="shop.css">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">NIKE</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="shop.html">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="user" onclick="goProfile()" id="userIcon"></div>
+</header>
+
+<!-- SHOP SECTION -->
+<section class="shop">
+
+  <h1>Shop Hoodies</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="images/jacket-1.png">
+      <h3>Relaxed Hoodie</h3>
+      <p>$99.50</p>
+      <button class="shop-btn" data-product="Relaxed Hoodie">Shop</button>
+    </div>
+
+    <div class="card">
+      <img src="images/jacket-2.png">
+      <h3>Winter Hoodie</h3>
+      <p>$129.50</p>
+      <button class="shop-btn" data-product="Winter Hoodie">Shop</button>
+    </div>
+
+    <div class="card">
+      <img src="images/jacket-3.png">
+      <h3>Urban Hoodie</h3>
+      <p>$109.50</p>
+      <button class="shop-btn" data-product="Urban Hoodie">Shop</button>
+    </div>
+
+    <div class="card">
+      <img src="images/jacket-4.png">
+      <h3>Spider Hoodie</h3>
+      <p>$149.50</p>
+      <button class="shop-btn" data-product="Spider Hoodie">Shop</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ✅ MODAL (move before script) -->
+<!-- ✅ MODAL -->
+<div id="orderModal" class="modal">
+
+  <div class="modal-box">
+    <span class="close" onclick="closeOrder()">✖</span>
+
+    <h2 id="productName">Order Details</h2>
+
+    <!-- DELIVERY DETAILS -->
+    <input id="address" placeholder="Full Address (Street, Area)">
+    <input id="city" placeholder="City">
+    <input id="pincode" placeholder="Pincode">
+    <input id="phone" placeholder="Phone Number">
+
+    <button onclick="placeOrder()">Place Order</button>
+
+    <p id="successMsg"></p>
+  </div>
+
+</div>
+
+<!-- SCRIPT LAST -->
+<script src="shop.js"></script>
+
+</body>
+</html>

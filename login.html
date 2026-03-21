@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="box">
+
+    <!-- LOGIN FORM -->
+    <div id="loginForm">
+      <h2>Login</h2>
+
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+
+      <button onclick="login()">Login</button>
+
+      <p onclick="showSignup()">New user? Create account</p>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div id="signupForm" class="hidden">
+      <h2>Create Account</h2>
+
+      <input id="name" placeholder="Name">
+      <input id="newEmail" type="email" placeholder="Email">
+      <input id="newPass" type="password" placeholder="Password">
+
+      <button onclick="signup()">Sign Up</button>
+
+      <p onclick="showLogin()">Already have account? Login</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>

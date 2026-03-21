@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+<link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+<div class="profile-container">
+    <div class="back-btn" onclick="goHome()">
+  &#8592;
+</div>
+
+  <div class="profile-card">
+
+    <!-- Avatar -->
+    <div class="avatar">
+      <i class="fa-solid fa-user"></i>
+    </div>
+
+    <!-- Details -->
+    <h2 id="username">User Name</h2>
+    <p id="email">user@email.com</p>
+
+    <!-- Buttons -->
+    <button onclick="logout()">Logout</button>
+
+  </div>
+
+</div>
+
+<!-- ICON LIBRARY -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="profile.js"></script>
+
+</body>
+</html>
