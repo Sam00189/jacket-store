@@ -70,6 +70,26 @@ Add to cart
 </section>
 
 <script src="script.js"></script>
+<div id="cartItems"></div>
 
+<script>
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
+const cartContainer = document.getElementById("cartItems");
+
+if (cart.length === 0) {
+    cartContainer.innerHTML = "<h2>Your cart is empty</h2>";
+} else {
+    cart.forEach(item => {
+        cartContainer.innerHTML += `
+            <div style="margin-bottom:20px;">
+                <img src="${item.image}" width="100">
+                <h3>${item.name}</h3>
+                <p>Price: $${item.price}</p>
+                <p>Quantity: ${item.quantity}</p>
+            </div>
+        `;
+    });
+}
+</script>
 </body>
 </html>
